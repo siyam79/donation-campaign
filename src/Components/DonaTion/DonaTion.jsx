@@ -6,7 +6,7 @@ const DonaTion = () => {
 
     const [donat, setDonat] = useState([])
     const [noDataFound, setNoDataFound] = useState('');
-    const [showButton ,setShowButton] = useState(false)
+    const [showButton ,setShowButton] = useState('4');
 
     useEffect(() => {
 
@@ -33,14 +33,16 @@ const DonaTion = () => {
                     noDataFound ? <p className=" h-[80vh] flex justify-center items-center ">{noDataFound} </p> : <div>
                         <div className=" grid lg:grid-cols-2 grid-cols-1 gap-6 ">
                             {
-                                donat?.map(card => <AllDonationCard key={card.id} card={card}></AllDonationCard>)
+                                donat?.slice(0 ,showButton ).map(card => <AllDonationCard key={card.id} card={card}></AllDonationCard>)
                             }
                         </div>
                     </div>
                 }
             </div>
-            <div className=" text-center mt-6 py-1  w-[80px] mx-auto rounded-md text-[#fff] bg-[#009444] ">
-                <button onClick={()=>setShowButton(showButton)} className=" font-semibold text-lg ">See All</button>
+            <div className={showButton === donat.length && 'hidden'}>
+               <span className= " w-[80px] mx-auto flex items-center  justify-center rounded-md mt-4 bg-[#009444] ">
+               <button onClick={()=>setShowButton(donat.length)} className=" font-semibold text-lg text-[#fff] ">See All</button>
+               </span>
             </div>
         </div>
     );
