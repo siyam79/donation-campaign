@@ -1,22 +1,9 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Card from "../Card/Card";
-
+import PropTypes from 'prop-types';
 const Cards = ({cards}) => {
     console.log(cards);
  
-
-
-//     const [cards , setCards] = useState([]);
-
-//     useEffect(() =>{
-//         fetch(`data.json`)
-//         .then(res => res.json())
-//         .then(data => setCards(data))
-//     } , [])
-
-// console.log(cards);
-
-
     return (
         <div>
             
@@ -29,4 +16,7 @@ const Cards = ({cards}) => {
     );
 };
 
+Cards.propTypes ={
+    cards: PropTypes.object
+}
 export default Cards;

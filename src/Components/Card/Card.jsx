@@ -6,9 +6,9 @@ const Card = ({ card }) => {
     const { id, Picture, Title, Category, category_bg, card_bg, text_and_button_bg } = card || {};
 
     return (
-        
+        <Link to={`/cards/${id}`}>
             <div style={{ background: card_bg }} >
-                <Link to={`/cards/${id}`}>
+                
                 <div className=''>
                     <div className="  relative flex  w-full flex-col rounded-xl  shadow-sm">
                         <div className="relative m-0 overflow-hidden rounded-none  bg-clip-border ">
@@ -33,9 +33,9 @@ const Card = ({ card }) => {
                     </div>
 
                 </div>
-                </Link>
+               
             </div>
-           
+            </Link>
     );
 };
 

@@ -32,8 +32,8 @@ const myRoute =  createBrowserRouter([
                 {
                   path :'/cards/:id',
                   element : <OneCard></OneCard>,
-                    // loader : ()=>fetch('/data.json')
-                }
+                    loader : ()=>fetch(`/data.json`),
+                },
             ]
         },
 ])

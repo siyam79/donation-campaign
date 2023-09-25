@@ -3,8 +3,8 @@
 const ErrorElement = () => {
 
     return (
-        <div className=" text-center text-3xl ">
-            <h1> error </h1>
+        <div className=" h-screen flex text-4xl items-center  justify-center  ">
+            <h1> No data Found  </h1>
         </div>
     );
 };
