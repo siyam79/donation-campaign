@@ -2,9 +2,8 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 const OneItemCard = ({ card }) => {
-    
-    const { id, Category, cover_img, Description, Price, category_bg, background } = card || {};
 
+    const { id, Category, cover_img, Description, Price, category_bg, background } = card || {};
 
     const handleAddToDonat = () => {
       
@@ -15,7 +14,9 @@ const OneItemCard = ({ card }) => {
         if (!donaTion) {
             addedDonationArr.push(card)
             localStorage.setItem('donaTion',JSON.stringify(addedDonationArr))
-            alert('hwllow')
+            toast.success('Donnat SuccessFull',{
+                position:"top-center"
+            })
         }
        
         else{
@@ -36,12 +37,7 @@ const OneItemCard = ({ card }) => {
           }
            
         }
-
-
     }
-
-
-
 
     return (
         <div>

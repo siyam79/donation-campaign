@@ -4,8 +4,6 @@ import OneItemCard from "../../OneItemCard/OneItemCard";
 
 
 const OneCard = () => {
-
-
     const [card, setcard] = useState()
 
     const { id } = useParams();
