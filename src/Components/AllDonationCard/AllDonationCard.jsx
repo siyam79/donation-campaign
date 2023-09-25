@@ -8,15 +8,15 @@ const AllDonationCard = ({ card }) => {
         <div className=" rounded-lg ">
 
             <div className="relative flex w-full  flex-row rounded-xl shadow-md" style={{ background: card_bg }}>
-                <div className="relative m-0 w-[220px] rounded-md  overflow-hidden">
+                <div className="relative m-0 w-[200px]  rounded-md  overflow-hidden">
                     <img
                         src={Picture}
                         alt="image"
-                        className="h-full lg:w-full  object-cover"
+                        className="h-full lg:w-full object-cover"
                     />
                 </div>
                 <div className="p-6">
-                    <div style={{ background: text_and_button_bg }} className="w-20 text-center font-semibold text-sm rounded-md  ">
+                    <div style={{ background: text_and_button_bg }} className="w-16 text-center font-semibold text-sm rounded-md  ">
                         <h6 className="mb-2 block py-1">
                             <span style={{ color: category_bg }}> {Title}</span>
                         </h6>

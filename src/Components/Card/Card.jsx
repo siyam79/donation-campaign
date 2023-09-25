@@ -7,8 +7,7 @@ const Card = ({ card }) => {
 
     return (
         <Link to={`/cards/${id}`}>
-            <div style={{ background: card_bg }} >
-                
+            <div className='rounded-md ' style={{ background: card_bg }} >
                 <div className=''>
                     <div className="  relative flex  w-full flex-col rounded-xl  shadow-sm">
                         <div className="relative m-0 overflow-hidden rounded-none  bg-clip-border ">

@@ -27,7 +27,7 @@ const Statistics = () => {
         { name: 'Your Donation', value: donaTion.length },
       ];
     return (
-        <div className=' container mx-auto '>
+        <div className=''>
             <div className="flex items-center justify-center">
                 <div>
                     <PieChart width={300} height={300}>
