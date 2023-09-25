@@ -1,4 +1,4 @@
-// import { useEffect, useState } from "react";
+
 import Card from "../Card/Card";
 import PropTypes from 'prop-types';
 const Cards = ({cards}) => {

@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 
 const MainLayout = () => {
     return (
-        <div className=" w-[95%] mx-auto "> 
+        <div className=""> 
     
          <Header></Header>
           <div className="mt-10 ">

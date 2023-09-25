@@ -23,10 +23,7 @@ const DonaTion = () => {
     console.log(donat);
 
     return (
-        <div>
-
-            {/* {donat.length >= 4  && <button className=" px-5 bg-green-600 "> SEE ALL </button> } */}
-
+        <div className=" container mx-auto">
 
             <div>
                 {
