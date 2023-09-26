@@ -4,7 +4,7 @@ import Home from "../Home/Home";
 import DonaTion from "../DonaTion/DonaTion";
 import Statistics from "../Statistics/Statistics";
 // import CardItem from "../CardItem/CardItem";
-// import ErrorElement from "../ErrorElement/ErrorElement";
+import ErrorElement from "../ErrorElement/ErrorElement";
 import OneCard from "./OneCard/OneCard";
 
 
@@ -12,7 +12,7 @@ const myRoute =  createBrowserRouter([
         {
             path : '/',
             element : <MainLayout></MainLayout>,
-            // errorElement:<ErrorElement></ErrorElement>,
+            errorElement:<ErrorElement></ErrorElement>,
             children : [
                 {
                     path : '/',
