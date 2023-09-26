@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import PropTypes from 'prop-types';
 const OneItemCard = ({ card }) => {
 
-    const { id, Category, cover_img, Description, Price, category_bg, background } = card || {};
+    const { id, Category, Picture, Description, Price, category_bg, background } = card || {};
 
     const handleAddToDonat = () => {
       
@@ -41,8 +41,8 @@ const OneItemCard = ({ card }) => {
 
     return (
         <div>
-            <div className=''>
-                <img src={cover_img} alt="" />
+            <div className='  '>
+                <img className=' w-full' src={Picture} alt="" />
             </div>
             <div className=' relative bottom-16  py-2  ' style={{ background: background }}>
                 <span className=' py-1 rounded-md  text-white  lg:ml-10  ml-4 ' style={{ background: category_bg }}>

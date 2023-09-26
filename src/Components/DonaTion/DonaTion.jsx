@@ -23,7 +23,7 @@ const DonaTion = () => {
     console.log(donat);
 
     return (
-        <div className=" container mx-auto">
+        <div className="">
 
             <div>
                 {

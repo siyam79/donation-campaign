@@ -8,11 +8,11 @@ const AllDonationCard = ({ card }) => {
         <div className=" rounded-lg ">
 
             <div className="relative flex w-full  flex-row rounded-xl shadow-md" style={{ background: card_bg }}>
-                <div className="relative m-0 w-[200px]  rounded-md  overflow-hidden">
+                <div className=" md:w-[240px]  rounded-md  overflow-hidden">
                     <img
                         src={Picture}
                         alt="image"
-                        className="h-full lg:w-full object-cover"
+                        className="h-full lg:w-full  "
                     />
                 </div>
                 <div className="p-6">
