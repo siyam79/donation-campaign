@@ -10,4 +10,3 @@
 ###  3 . If we OneItem card a catagory it will be set to our browsers localStorage ..then we put the data from the localStorage into the donattion Route .....  aand   Dobation card celect are percen %  for Statistics Route  Pei charts  show  ......
 
 
-

@@ -18,33 +18,56 @@ const Statistics = () => {
         );
     };
     const data = [
-        { name: 'Total Donation', value: (12 - donaTion.length) },
-        { name: 'Your Donation', value: donaTion.length },
+        { name: 'Total Donation', value: (12 - donaTion?.length) },
+        { name: 'Your Donation', value: donaTion?.length },
+    ];
+    const data2 = [
+        { name: 'Total Donation', value: 100 },
+        { name: 'Your Donation', value: 0 },
     ];
 
     return (
-        <div className=''>
+        <div className='  '>
             <div className="flex items-center justify-center">
                 <div>
-                    <PieChart width={300} height={300}>
-                        <Pie
-                            data={data}
-                            cx="50%"
-                            cy="50%"
-                            labelLine={false}
-                            label={renderCustomizedLabel}
-                            outerRadius={100}
-                            fill="#8884d8"
-                            dataKey="value"
-                        >
-                            {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))}
-                        </Pie>
-                        <Legend></Legend>
-                    </PieChart>
+                    {
+                        donaTion !== null ? <>  <PieChart width={300} height={300}>
+                            <Pie
+                                data={data}
+                                cx="50%"
+                                cy="50%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={100}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Legend></Legend>
+                        </PieChart> </> : (
+                            <PieChart width={300} height={300}>
+                                <Pie
+                                    data={data2}
+                                    cx="50%"
+                                    cy="50%"
+                                    labelLine={false}
+                                    label={renderCustomizedLabel}
+                                    outerRadius={100}
+                                    fill="#8884d8"
+                                    dataKey="value"
+                                >
+                                    <Cell fill={COLORS[0]} />
+                                </Pie>
+                                <Legend></Legend>
+                            </PieChart>
+                        )
+                    }
                 </div>
             </div>
+
         </div>
     );
 };
